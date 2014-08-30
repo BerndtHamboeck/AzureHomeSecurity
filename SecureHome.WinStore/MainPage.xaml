@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="SecureHome.WinStore.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecureHome.WinStore"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Name="WebView0x1" Stretch="UniformToFill"></Image>
+        <TextBlock Grid.Row="0" Grid.Column="0">CAM1</TextBlock>
+        <TextBlock Name="CurrentDateTextBlock" HorizontalAlignment="Center" 
+                   VerticalAlignment="Bottom">28.08.2014 04:10:22</TextBlock>
+    </Grid>
+</Page>

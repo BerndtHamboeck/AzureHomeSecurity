@@ -1,0 +1,28 @@
+<ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+
+  <ContextInitializers>
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.ComponentContextInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.DeviceContextInitializer, Microsoft.ApplicationInsights" />
+  </ContextInitializers>
+  <ContextInitializers xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)"/>
+
+  <TelemetryInitializers>
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Core.TimestampPropertyInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Core.StoreAppSessionInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Core.StoreAppUserInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.NetBiosMachineNameTelemetryInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.OperatingSystemTelemetryInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.ProcessIdTelemetryInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.ProcessNameTelemetryInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.ThreadIdTelemetryInitializer, Microsoft.ApplicationInsights" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Contexts.ThreadLanguageTelemetryInitializer, Microsoft.ApplicationInsights" />
+  </TelemetryInitializers>
+  <TelemetryInitializers xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)"/>
+
+  <TelemetryModules>
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Windows.PageViewTelemetryModule, Microsoft.ApplicationInsights.Windows" />
+    <Add xdt:Transform="Remove" xdt:Locator="Match(Type)" Type="Microsoft.ApplicationInsights.Windows.UnhandledExceptionTelemetryModule, Microsoft.ApplicationInsights.Windows" />
+  </TelemetryModules>
+  <TelemetryModules xdt:Transform="Remove" xdt:Locator="Condition(count(*)=0)"/>
+
+</ApplicationInsights>

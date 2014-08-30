@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>Microsoft.ApplicationInsights.Windows</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ApplicationInsights.Windows.PageViewTelemetryModule">
+            <summary>
+            A module that deals in PageView events and will create PageViewTelemetry objects when triggered.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Windows.PageViewTelemetryModule.#ctor(Microsoft.ApplicationInsights.TelemetryConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.Windows.PageViewTelemetryModule" /> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Windows.PageViewTelemetryModule.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.Windows.UnhandledExceptionTelemetryModule">
+            <summary>
+            A module that deals in Exception events and will create ExceptionTelemetry objects when triggered.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Windows.UnhandledExceptionTelemetryModule.#ctor(Microsoft.ApplicationInsights.TelemetryConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ApplicationInsights.Windows.UnhandledExceptionTelemetryModule" /> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Windows.UnhandledExceptionTelemetryModule.CaptureUnhandledException(Windows.Foundation.HResult,System.Boolean)">
+            <summary>
+            Capture the unhandled exception and trace it.
+            </summary>
+            <param name="exception">The exception object to track.</param>
+            <param name="exceptionHandled">A boolean indicating if this exception was handled already.</param>
+        </member>
+        <member name="T:Microsoft.ApplicationInsights.Windows.UnhandledExceptionTransmitter">
+            <summary>
+            A transmitter that will immediately send whatever telemetry we want to transmit immediately.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Windows.UnhandledExceptionTransmitter.EnqueueAsync(Microsoft.ApplicationInsights.Channels.Transmission)">
+            <summary>
+            Transmits the <paramref name="transmission" />.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Windows.UnhandledExceptionTransmitter.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+    </members>
+</doc>
